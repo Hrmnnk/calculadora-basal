@@ -1,0 +1,41 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+body{
+    background-color: hsl(100, 100%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+#contenedor {
+
+     background-color: rgb(235, 238, 238);
+     height: 50vh;
+     width: 50vw;
+     top: 0px;
+     position: absolute;
+     inset:0px;
+     margin: auto;
+     text-align: center;
+}
+#calculadora {
+  background-color: rgb(225, 222, 222);
+  width: 50%;
+  float: left;
+  height: 100%;
+
+}
+#detalle{
+    background-color:rgba(0, 0, 0, .10);
+    color: black;
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+.contenido{
+    /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
+}
+
