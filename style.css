@@ -1,23 +1,27 @@
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 
 body{
-    background-color: hsl(100, 100%, 100%);
+    background-color: #f3f2f1;
     font-family: 'Montserrat', sans-serif;
     color: black;
 }
 #contenedor {
 
-     background-color: rgb(235, 238, 238);
+     background-color: #c6c6c641;
      height: 50vh;
-     width: 50vw;
+     width: 30vw;
      top: 0px;
      position: absolute;
      inset:0px;
      margin: auto;
+     border-radius: 50px;
+     overflow: hidden;
      text-align: center;
+     box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.487), 
+    0 10px 10px rgba(0, 0, 0, 0.354);
 }
 #calculadora {
-  background-color: rgb(225, 222, 222);
+  background-color: whitesmoke ;
   width: 50%;
   float: left;
   height: 100%;
@@ -29,6 +33,7 @@ body{
     height: 100%;
     width: 50%;
     float: right;
+    font-size: 85%;
 }
 .contenido{
     /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
@@ -38,4 +43,28 @@ body{
     overflow: hidden;
     padding: 40px;
 }
-
+.parrafo{
+    font-family: "https://sf.abarba.me/SF-UI-Display-Black.otf";
+}
+ input {
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 5px 10px;
+    width: 50% ;
+    font-size: 70%;
+    border: none;
+ }
+ button { 
+    margin-top: 10%;
+    margin-left: 12%;
+    border-radius: 20%;
+    border: none;
+    background-color: white;
+ }
+.placeholer{
+    margin-left: 30%;
+}
+.trespuntos { 
+    font-family: "https://sf.abarba.me/SF-UI-Display-Black.otf";
+    font-size: ;
+}
