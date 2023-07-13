@@ -21,7 +21,7 @@ body{
 }
 
 #contenedor{
-    animation-duration: 2.4s;
+    animation-duration: 1.7s;
     animation-name: slidein;
   }
   
@@ -60,28 +60,30 @@ body{
 }
 .parrafo{
     font-family: "Time";
+    display: none;
     font-size: 19px;
     margin-left: 28px
-    display: none;
+    
 }
  input {
     border-radius: 20px;
     margin-left: 20px;
-    padding: 5px 10% 5px 30px;
+    padding: 9px 46px;
     width: 75px;
     font-size: 70%;
     border: none;
+    
  }
  button { 
-    border-radius: 20px;
-    margin-left: 20px;
-    width: 75px;
+    border-radius: 50px;
+    margin-left: 25px;
+    width: 87px;
+    height: 36px;
     font-size: 70%;
     border: none;
     margin-top: 18px;
     background: #08855b ;
     width: 90px;
-    height: 24px;
     color: white;
     /*transition: transform 20ms ease-in;*/
  }
@@ -96,7 +98,7 @@ button:active {
     margin-left: 35px;
     font-size: 17px;
     font-weight: bold;
-    display: none;
+    display:none;
 }
 ul{
     padding: 0px;
@@ -110,4 +112,7 @@ h1 {
 }
 title{
     alt: initial;
+}
+#ingreso{
+     margin-left: 23px;
 }
