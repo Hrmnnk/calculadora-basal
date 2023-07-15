@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Basal</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="script.js"></script>
+    <script src="scritp.js" defer ></script>
     <link rel="icon" href="suero cabezera.ico">
 </head>
 <body>
@@ -14,10 +14,10 @@
             <div class="contenido">
                 <h1>Hidratacion Basal</h1>
                 <p id="ingreso">Ingrese todos los datos</p>
-                <input type="number" placeholder="Peso en kg">
+                <input type="number" id="entrada" placeholder="Peso en kg">
                 <p id="errormensaje"> completar datos</p>
-                <button>Calcular</button>
-                <P class="parrafo">70 cc/hr</P>
+                <button id="boton">Calcular</button>
+                <P class="parrafo" id="textocc">70 cc/hr</P>
                 <p class="parrafo">m+m/2 105 cc/hr</p>
              </div>
          </div>
