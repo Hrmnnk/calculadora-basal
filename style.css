@@ -1,142 +1,143 @@
-@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
 body {
-    background-color: #f3f2f1;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-}
-
-
-#contenedor {
-    background: rgb(245, 245, 245);
-    background: linear-gradient(90deg, rgba(245, 245, 245, 1) 0%, rgba(131, 131, 131, 0.5088629201680672) 60%);
-    height: 50vh;
-    width: 40vw;
-    top: 0px;
-    position: absolute;
-    inset: 0px;
-    margin: auto;
-    border-radius: 50px;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.487),
-        0 10px 10px rgba(0, 0, 0, 0.354);
+  background-color: #f3f2f1;
+  font-family: "Montserrat", sans-serif;
+  color: black;
 }
 
 #contenedor {
-    animation-duration: 1.7s;
-    animation-name: slidein;
+  background: rgb(245, 245, 245);
+  background: linear-gradient(
+    90deg,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(131, 131, 131, 0.5088629201680672) 60%
+  );
+  height: 50vh;
+  width: 40vw;
+  top: 0px;
+  position: absolute;
+  inset: 0px;
+  margin: auto;
+  border-radius: 50px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.487),
+    0 10px 10px rgba(0, 0, 0, 0.354);
+}
+
+#contenedor {
+  animation-duration: 1.7s;
+  animation-name: slidein;
 }
 
 @keyframes slidein {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 #calculadora {
-    background-color: rgba(245, 245, 245, 0);
-    width: 50%;
-    float: left;
-    height: 100%;
-
+  background-color: rgba(245, 245, 245, 0);
+  width: 50%;
+  float: left;
+  height: 100%;
 }
 
 #detalle {
-    background-color: #00000000;
-    color: black;
-    height: 100%;
-    width: 50%;
-    float: right;
-    font-size: 85%;
+  background-color: #00000000;
+  color: black;
+  height: 100%;
+  width: 50%;
+  float: right;
+  font-size: 85%;
 }
 
 .contenido {
-    /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    overflow: hidden;
-    padding: 40px;
+  /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  padding: 40px;
 }
 
 .parrafo {
-    font-family: "Time";
-    display: none;
-    font-size: 19px;
-    margin-left: 28px
+  font-family: "Time";
+  display: none;
+  font-size: 19px;
+  margin-left: 28px;
 }
 
 input {
-    border-radius: 20px;
-    margin-left: 20px;
-    padding: 9px 46px;
-    width: 75px;
-    font-size: 70%;
-    border: none;
-
+  border-radius: 20px;
+  margin-left: 20px;
+  padding: 9px 46px;
+  width: 75px;
+  font-size: 70%;
+  border: none;
 }
 
 button {
-    border-radius: 50px;
-    margin-left: 25px;
-    width: 87px;
-    height: 36px;
-    font-size: 70%;
-    border: none;
-    margin-top: 18px;
-    background: #08855b;
-    width: 90px;
-    color: white;
-    /*transition: transform 20ms ease-in;*/
+  border-radius: 50px;
+  margin-left: 25px;
+  width: 87px;
+  height: 36px;
+  font-size: 70%;
+  border: none;
+  margin-top: 18px;
+  background: #08855b;
+  width: 90px;
+  color: white;
+  /*transition: transform 20ms ease-in;*/
 }
 
 #trespuntos {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 130%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 130%;
 }
 
 button:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 #errormensaje {
-    color: #c20000;
-    margin-left: 35px;
-    font-size: 17px;
-    font-weight: bold;
-    display: none;
+  color: #c20000;
+  margin-left: 35px;
+  font-size: 17px;
+  font-weight: bold;
+  display: none;
 }
 
 ul {
-    padding: 0px;
-    font-size: 15px;
+  padding: 0px;
+  font-size: 15px;
 }
 
 #titulo2 {
-    margin-top: -40px;
+  margin-top: -40px;
 }
 
 h1 {
-    margin-left: 19px;
+  margin-left: 19px;
 }
 
 title {
-    alt: initial;
+  alt: initial;
 }
 
 #ingreso {
-    margin-left: 23px;
-    font-family: 'Times New Roman', Times, serif;
+  margin-left: 23px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-@media only screen and (max-width:600px){
-    #contenedor {
-        background-color: aqua;
-        display: flex;
+@media only screen and (max-width: 600px) {
+  #contenedor {
+    background-color: aqua;
+    display: flex;
     align-items: center;
     height: 42%;
     width: 64%;
@@ -144,9 +145,9 @@ title {
     flex-wrap: nowrap;
     align-content: space-around;
     justify-content: space-around;
-   } 
-.contenido {
+  }
+  .contenido {
     padding: 8%;
     width: 50%;
-   }
+  }
 }

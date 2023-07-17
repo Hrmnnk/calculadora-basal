@@ -48,11 +48,11 @@ let variableletras= "acd"
 /*Decisiones en javascript (if,if else, switch)*/
 
 //Escribe un programa que tome un número como entrada y muestre un mensaje en la consola indicando si es mayor, menor o igual a 10.
-  let numero=prompt('¿numero?');
-   if(numero> 10){
+  let numero1 =prompt('¿numero?');
+   if(numero1> 10){
      console.log( "Es menor")
    }
-   else if( numero<10){
+   else if( numero1<10){
       console.log( "Es menor")
    }
    else{
@@ -70,7 +70,6 @@ let variableletras= "acd"
     
 //Escribe un programa que solicite al usuario que ingrese una letra y verifique si es una vocal o una consonante.
    let caracter=prompt('Introducir Letra')
-   caracter.length=1
    caracter=caracter.toLowerCase()
    if(caracter==="a"||
    caracter==="e"||
@@ -81,19 +80,13 @@ let variableletras= "acd"
    }
    else{
     console.log("La letra no es una voal :c")
-   }
+   } 
 
 //Escribe un programa que solicite al usuario que ingrese una letra y verifique si es una vocal o una consonante.
-while (true) {
-   console.log(1)
-}
-
-
-
 
 
 //Escribe un programa que solicite al usuario que ingrese una edad y verifique si es mayor o menor de edad.
-let numero=prompt('¿Edad?');
+   let numero=prompt('¿Edad?');
    if(numero>= 18){
      console.log( "Es mayor")
    }
@@ -105,17 +98,49 @@ let numero=prompt('¿Edad?');
 
 
 //Escribe un programa que solicite al usuario que ingrese un número del 1 al 7 y muestre un mensaje en la consola indicando el día de la semana correspondiente.
-
-
+let cja= prompt ('numero?')
+      
+let dias  = ["domingo","lunes","martes","mieroles","viernes","sabado"]
+  
+console.log( dias[cja-1])
 
 
 //Funciones
 
 //Escribe una función que tome dos números como argumentos y devuelva su suma.
+ function suma(a,b){
+   let suma = a + b
+    return (suma);
+ }
+  console.log(suma(2,3))
+
 
 //Escribe una función que tome un número como argumento y devuelva true si es par o false si es impar.
 
+ function parimetro (a){
+   let salida
+   if (a%2==0){
+      salida="par"
+   } 
+   else {
+      salida= impar
+   }
+   return(salida);
+}
+     console.log(parimetro(24))
+     
+
 //Escribe una función que tome un array de números como argumento y devuelva la suma de sus elementos.
+
+let numeritos=[12,23,34,]
+ function sumita( m1,m2){
+       let sum= m1+m2
+      retur (sum);
+ }
+  console.log(numeritos.reduce(sumita))
+
+
+
 
 //Escribe una función que tome un array de strings como argumento y devuelva la longitud del string más largo.
 

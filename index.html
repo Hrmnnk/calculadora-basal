@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora Basal</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="scritp.js" defer ></script>
-    <link rel="icon" href="suero cabezera.ico">
-</head>
-<body>
-    <div id="contenedor">  
-        <div id="calculadora">
-            <div class="contenido">
-                <h1>Hidratacion Basal</h1>
-                <p id="ingreso">Ingrese todos los datos</p>
-                <input type="number" id="entrada" placeholder="Peso en kg">
-                <p id="errormensaje"> completar datos</p>
-                <button id="boton">Calcular</button>
-                <P class="parrafo" id="textocc">70 cc/hr</P>
-                <p class="parrafo">m+m/2 105 cc/hr</p>
-             </div>
-         </div>
-         <div id="detalle">
-            <div class="contenido">
-                <h1 id="titulo2">¿Como se calcula?</h1>
-               
-                  <ul id="trespuntos" >
-                  <li>De 0kg a 10kg, se calcula 100cc por cada kilo</li>
-                  <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
-                  <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
-                  </ul>
-
-            </div>
+    <script src="ejercitario 1.1.js" defer></script>
+    <link rel="icon" href="suero cabezera.ico" />
+  </head>
+  <body>
+    <div id="contenedor">
+      <div id="calculadora">
+        <div class="contenido">
+          <h1>Hidratacion Basal</h1>
+          <p>Ingrese todos los datos</p>
+          <input type="number" id="entrada" placeholder="Peso en kg" />
+          <p id="errormensaje">completar datos</p>
+          <button id="boton">Calcular</button>
+          <p class="parrafo" id="textocc"></p>
+          <p class="parrafo" id="textocc2"></p>
+          <p class="parrafo" id="textocc3"></p>
         </div>
+      </div>
+      <div id="detalle">
+        <div class="contenido">
+          <h1 id="titulo2">¿Como se calcula?</h1>
+
+          <ul id="trespuntos">
+            <li>De 0kg a 10kg, se calcula 100cc por cada kilo</li>
+            <li>
+              Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg
+            </li>
+            <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</body>
-</html> 
+  </body>
+</html>
