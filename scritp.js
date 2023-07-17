@@ -13,22 +13,22 @@ BOTON.addEventListener("click", () => {
     TEXTOCC3.style.display = "none";
   } else if (INPUT.value <= 30) {
     let holly = algoritmoHolliday(INPUT.value);
-    TEXTOCC.innerHTML = holly[0] + "cc";
+    TEXTOCC.innerHTML = holly[0] + " cc";
     TEXTOCC.style.display = "block";
-    TEXTOCC2.innerHTML = holly[1];
+    TEXTOCC2.innerHTML = holly[1]+ " cc/hr";
     TEXTOCC2.style.display = "block";
-    TEXTOCC3.innerHTML = holly[2];
+    TEXTOCC3.innerHTML = holly[2] + " m+m/2";
     TEXTOCC3.style.display = "block";
     ERROR.style.display = "none";
   } else {
     let sc = superficie(INPUT.value);
-    TEXTOCC.innerHTML = sc[0];
+    TEXTOCC.innerHTML = sc[0] + "cc por 1500";
     TEXTOCC.style.display = "block";
-    TEXTOCC2.innerHTML = sc[1];
+    TEXTOCC2.innerHTML = sc[1]+ "cc por 2000";
     TEXTOCC2.style.display = "block";
     ERROR.style.display = "none";
+    TEXTOCC3.style.display= "none"
   }
-  //    TEXTOCC.innerHTML = INPUT.value + "cc/h";
 });
 
 // en donde dice entrada va la variable que va a ejecutar la funcion (el argumento)

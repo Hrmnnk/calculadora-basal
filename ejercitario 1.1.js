@@ -1,154 +1,142 @@
 /* Variables y tipo de datos
 Lee las instrucciones de cada comentario y escribí el código para realizar la tarea */
 
-
 //Crea una variable numero y asígnale un valor de tipo number. porque usa var para poner variable y luego let?
 var a = 1;
 //Crea una variable texto y asígnale un valor de tipo string.
-let variableletras= "acd"
+let variableletras = "acd";
 
 //Crea una variable verdadero y asígnale un valor de tipo boolean que represente una afirmación verdadera.
-    let variabletrue= true
-    variabletrue= true
+let variabletrue = true;
+variabletrue = true;
 
 //Crea una variable falso y asígnale un valor de tipo boolean que represente una afirmación falsa.
-    let variableflasa= false
+let variableflasa = false;
 
 //Crea una variable nulo y asígnale un valor de tipo null.
-     let nullo= null
+let nullo = null;
 
 //Crea una variable indefinido y asígnale un valor de tipo undefined.
-    let indefinido= undefined
+let indefinido = undefined;
 
 //Crea una variable arreglo y asígnale un arreglo con varios valores de diferentes tipos de datos.
-    let arreglo= [ variableflasa, variabletrue, variableletras, a]
+let arreglo = [variableflasa, variabletrue, variableletras, a];
 
 //Imprime en la consola el valor de la variable número y el tipo de dato que almacena.
-   console.log(a, typeof a)
+console.log(a, typeof a);
 
 //Imprime en la consola el valor de la variable texto y el tipo de dato que almacena.
-  console.log( variableletras, typeof variableletras)
+console.log(variableletras, typeof variableletras);
 
 //Imprime en la consola el valor de la variable verdadero y el tipo de dato que almacena.
-  console.log(variabletrue,typeof variabletrue)
+console.log(variabletrue, typeof variabletrue);
 
 //Imprime en la consola el valor de la variable falso y el tipo de dato que almacena.
-     console.log( variableflasa, typeof variableflasa)
+console.log(variableflasa, typeof variableflasa);
 
 //Imprime en la consola el valor de la variable nulo y el tipo de dato que almacena.
-    console.log(null, typeof nullo)
+console.log(null, typeof nullo);
 
 //Imprime en la consola el valor de la variable indefinido y el tipo de dato que almacena.
-    console.log(indefinido, typeof indefinido)
+console.log(indefinido, typeof indefinido);
 
 //Imprime en la consola el valor de la variable arreglo y el tipo de dato que almacena.
-   console.log(arreglo, typeof arreglo)
-
+console.log(arreglo, typeof arreglo);
 
 /*Decisiones en javascript (if,if else, switch)*/
 
 //Escribe un programa que tome un número como entrada y muestre un mensaje en la consola indicando si es mayor, menor o igual a 10.
-  let numero1 =prompt('¿numero?');
-   if(numero1> 10){
-     console.log( "Es menor")
-   }
-   else if( numero1<10){
-      console.log( "Es menor")
-   }
-   else{
-    console.log( "Es igual")
-   }
+let numero1 = prompt("¿numero?");
+if (numero1 > 10) {
+  console.log("Es menor");
+} else if (numero1 < 10) {
+  console.log("Es menor");
+} else {
+  console.log("Es igual");
+}
 //Escribe un programa que solicite al usuario que ingrese un número y verifique si es par o impar.
 
-   let variablenumeropar=prompt('¿numero?')
-     if( variablenumeropar%2==0){
-        console.log( "El  numero sugerido es par")
-     }
-     else{
-        console.log( "El numero sugerido es impar")
-     }
-    
-//Escribe un programa que solicite al usuario que ingrese una letra y verifique si es una vocal o una consonante.
-   let caracter=prompt('Introducir Letra')
-   caracter=caracter.toLowerCase()
-   if(caracter==="a"||
-   caracter==="e"||
-   caracter==="i"||
-   caracter==="o"||
-   caracter==="u"){
-    console.log("La letra es una vocal :D")
-   }
-   else{
-    console.log("La letra no es una voal :c")
-   } 
+let variablenumeropar = prompt("¿numero?");
+if (variablenumeropar % 2 == 0) {
+  console.log("El  numero sugerido es par");
+} else {
+  console.log("El numero sugerido es impar");
+}
 
 //Escribe un programa que solicite al usuario que ingrese una letra y verifique si es una vocal o una consonante.
+let caracter = prompt("Introducir Letra");
+caracter = caracter.toLowerCase();
+if (
+  caracter === "a" ||
+  caracter === "e" ||
+  caracter === "i" ||
+  caracter === "o" ||
+  caracter === "u"
+) {
+  console.log("La letra es una vocal :D");
+} else {
+  console.log("La letra no es una voal :c");
+}
 
+//Escribe un programa que solicite al usuario que ingrese una letra y verifique si es una vocal o una consonante.
 
 //Escribe un programa que solicite al usuario que ingrese una edad y verifique si es mayor o menor de edad.
-   let numero=prompt('¿Edad?');
-   if(numero>= 18){
-     console.log( "Es mayor")
-   }
-   else {
-      console.log( "Es menor")
-   }
-   // para limitar y restringir caracter y demas investigar while
-
-
+let numero = prompt("¿Edad?");
+if (numero >= 18) {
+  console.log("Es mayor");
+} else {
+  console.log("Es menor");
+}
+// para limitar y restringir caracter y demas investigar while
 
 //Escribe un programa que solicite al usuario que ingrese un número del 1 al 7 y muestre un mensaje en la consola indicando el día de la semana correspondiente.
-let cja= prompt ('numero?')
-      
-let dias  = ["domingo","lunes","martes","mieroles","viernes","sabado"]
-  
-console.log( dias[cja-1])
+let cja = prompt("numero?");
 
+let dias = ["domingo", "lunes", "martes", "mieroles", "viernes", "sabado"];
+
+console.log(dias[cja - 1]);
 
 //Funciones
 
 //Escribe una función que tome dos números como argumentos y devuelva su suma.
- function suma(a,b){
-   let suma = a + b
-    return (suma);
- }
-  console.log(suma(2,3))
-
+function suma(a, b) {
+  let suma = a + b;
+  return suma;
+}
+console.log(suma(2, 3));
 
 //Escribe una función que tome un número como argumento y devuelva true si es par o false si es impar.
 
- function parimetro (a){
-   let salida
-   if (a%2==0){
-      salida="par"
-   } 
-   else {
-      salida= impar
-   }
-   return(salida);
+function parimetro(a) {
+  let salida;
+  if (a % 2 == 0) {
+    salida = "par";
+  } else {
+    salida = impar;
+  }
+  return salida;
 }
-     console.log(parimetro(24))
-     
+console.log(parimetro(24));
 
 //Escribe una función que tome un array de números como argumento y devuelva la suma de sus elementos.
 
-let numeritos=[12,23,34,]
- function sumita( m1,m2){
-       let sum= m1+m2
-      retur (sum);
- }
-  console.log(numeritos.reduce(sumita))
-
-
-
+let numbers = [12, 23, 34];
+function sum(numbers) {
+  let result = 0
+  for (let i = 0; i < numbers.length; i++) {
+   const element = numbers[i];
+    result=  result + element
+  }
+  return(result);
+}
+console.log(sum(numbers));
 
 //Escribe una función que tome un array de strings como argumento y devuelva la longitud del string más largo.
 
+   let letters= ["car","hause","A-10 Thunderbolt","McQueen"]
+   ˀ
+  
 //Escribe una función que tome un objeto como argumento y devuelva un array con los valores de todas sus propiedades.
-
-
-
-
 
 //Vectores
 
@@ -162,9 +150,6 @@ let numeritos=[12,23,34,]
 
 //Escribe una función que tome un array de números como argumento y devuelva un nuevo array que contenga la suma acumulativa de sus elementos.
 
-
-
-
 //Bucles
 
 //Escribe un bucle for que imprima en la consola los números del 1 al 10.
@@ -176,10 +161,6 @@ let numeritos=[12,23,34,]
 //Crea una función que reciba un número n y devuelva la suma de todos los números del 1 al n. Utiliza un bucle for para calcular la suma y muestra el resultado en la consola.
 
 //Crea una función que reciba un vector y devuelva la suma de todos sus elementos. Utiliza un bucle while para calcular la suma y muestra el resultado en la consola.
-
-
-
-
 
 //DOM y eventos
 
