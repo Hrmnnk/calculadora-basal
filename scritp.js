@@ -22,9 +22,9 @@ BOTON.addEventListener("click", () => {
     ERROR.style.display = "none";
   } else {
     let sc = superficie(INPUT.value);
-    TEXTOCC.innerHTML = sc[0] + "cc por 1500";
+    TEXTOCC.innerHTML = sc[0] + " cc por 1500";
     TEXTOCC.style.display = "block";
-    TEXTOCC2.innerHTML = sc[1]+ "cc por 2000";
+    TEXTOCC2.innerHTML = sc[1]+ " cc por 2000";
     TEXTOCC2.style.display = "block";
     ERROR.style.display = "none";
     TEXTOCC3.style.display= "none"
