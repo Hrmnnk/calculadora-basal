@@ -3,6 +3,7 @@ const TEXTOCC2 = document.getElementById("textocc2");
 const TEXTOCC3 = document.getElementById("textocc3");
 const ERROR = document.getElementById("errormensaje");
 const BOTON = document.getElementById("boton");
+const NOMBRES= document.getElementById('nombres')
 const INPUT = document.getElementById("entrada");
 // esta parte es para poner un escuchador de varios tipos de casos.
 BOTON.addEventListener("click", () => {
@@ -20,14 +21,17 @@ BOTON.addEventListener("click", () => {
     TEXTOCC3.innerHTML = holly[2] + " m+m/2";
     TEXTOCC3.style.display = "block";
     ERROR.style.display = "none";
+    NOMBRES.innerHTML= "Metodo Holliday-Sega"
   } else {
     let sc = superficie(INPUT.value);
-    TEXTOCC.innerHTML = sc[0] + " cc por 1500";
+    
+    TEXTOCC.innerHTML = "Sc*1500"+sc[0] + "cc";
     TEXTOCC.style.display = "block";
-    TEXTOCC2.innerHTML = sc[1]+ " cc por 2000";
+    TEXTOCC2.innerHTML = "Sc*2000"+sc[1]+ "cc";
     TEXTOCC2.style.display = "block";
     ERROR.style.display = "none";
     TEXTOCC3.style.display= "none"
+    NOMBRES.innerHTML= "Metodo de superficie corporal"
   }
 });
 
