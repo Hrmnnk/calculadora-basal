@@ -24,10 +24,9 @@ BOTON.addEventListener("click", () => {
     NOMBRES.innerHTML= "Metodo Holliday-Sega"
   } else {
     let sc = superficie(INPUT.value);
-    
-    TEXTOCC.innerHTML = "Sc*1500"+sc[0] + "cc";
+    TEXTOCC.innerHTML = sc[0] + "cc por 1500";
     TEXTOCC.style.display = "block";
-    TEXTOCC2.innerHTML = "Sc*2000"+sc[1]+ "cc";
+    TEXTOCC2.innerHTML = sc[1]+ "cc por 2000";
     TEXTOCC2.style.display = "block";
     ERROR.style.display = "none";
     TEXTOCC3.style.display= "none"
